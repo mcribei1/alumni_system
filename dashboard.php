@@ -60,7 +60,8 @@ $activityFeed = array_slice($activityFeed, 0, 10);
 
   <div class="action-buttons">
     <a href="newsletter.php" class="btn">📬 Create Newsletter</a>
-    <a href="report_overview.php" class="btn">📊 View Reports</a>
+   <a href="report/report.php" class="btn">📊 View Reports</a>
+
   </div>
 
   <div class="stats-container">
@@ -79,6 +80,30 @@ $activityFeed = array_slice($activityFeed, 0, 10);
       <?php endforeach; ?>
     </ul>
   </div>
+<!-- Profile Menu -->
+<div class="profile-container">
+  <img src="images/user_placeholder.png" alt="Profile" class="profile-icon" id="profileIcon">
+
+  <div class="profile-menu" id="profileMenu">
+    <p><strong><?php echo $_SESSION['email']; ?></strong></p>
+    <a href="#">⚙️ Account Settings</a>
+    <a href="logout.php">🔒 Logout</a>
+  </div>
+</div>
+<script>
+  const profileIcon = document.getElementById("profileIcon");
+  const profileMenu = document.getElementById("profileMenu");
+
+  profileIcon.addEventListener("click", () => {
+    profileMenu.style.display = profileMenu.style.display === "block" ? "none" : "block";
+  });
+
+  document.addEventListener("click", function (e) {
+    if (!profileIcon.contains(e.target) && !profileMenu.contains(e.target)) {
+      profileMenu.style.display = "none";
+    }
+  });
+</script>
 
 </body>
 </html>

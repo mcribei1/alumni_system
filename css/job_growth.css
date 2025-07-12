@@ -1,0 +1,144 @@
+/* Base Setup */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #0B1315;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+.logo {
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.controls input,
+.controls select {
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  min-width: 220px;
+}
+
+/* Results */
+.results-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Alumni Card */
+.alumni-card {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  background-color: #fff;
+  transition: background-color 0.3s;
+}
+
+.alumni-card:hover {
+  background-color: #f0f0f0;
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  .alumni-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem auto;
+  flex-wrap: wrap;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem auto;
+  flex-wrap: wrap;
+}
+
+.controls input,
+.controls select {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  background-color: #FDBB30;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #e6a800;
+}
+}
+
+.chart-section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#generateChartBtn {
+  padding: 10px 20px;
+  background-color: #e6a800;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#generateChartBtn:hover {
+  background-color: #e6a800;
+}
+.chart-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.chart-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}

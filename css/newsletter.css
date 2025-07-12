@@ -1,0 +1,83 @@
+body {
+    background-color: #f9f9f9;
+    font-family: "Segoe UI", sans-serif;
+    padding: 20px;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+label {
+    font-weight: 500;
+}
+
+textarea, input[type="text"], input[type="url"], .form-control, .form-control-file {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Yellow Primary Button Style */
+button.btn-yellow {
+    background-color: #FDBB30;  /* KSU yellow */
+    color: #000;
+    font-weight: 600;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-yellow:hover {
+    background-color: #e6a800;
+    color: #000;
+}
+
+.form-text {
+    font-size: 0.85em;
+    color: #6c757d;
+}
+
+img {
+    max-height: 70px;
+    margin: 10px;
+}
+/* Confirmation Box Styles */
+.confirmation-box {
+    margin: 100px auto;
+    padding: 30px;
+    border: 2px solid #e6a800;
+    background-color: #ffffff;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation-box h2 {
+    color: #FDBB30;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.btn-back {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e6a800;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #ffd700;
+}

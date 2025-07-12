@@ -1,0 +1,45 @@
+body {
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h2 {
+  color: #1e4d2b;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #fff9db;
+  cursor: pointer;
+}
+
+.modal-content {
+  background-color: #FFD100;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.modal-title {
+  color: #808080;
+}
+
+.btn-primary {
+  background-color: #FFD100;
+  border: none;
+  color: black;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #e6b800;
+  color: black;
+}
+.btn.ksu-yellow {
+  background-color: #FFD100;
+  color: black;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 0.6rem 1.5rem;
+}
+.btn.ksu-yellow:hover {
+  background-color: #e6b800;
+}
