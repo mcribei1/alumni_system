@@ -5,10 +5,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Skill Set Report</title>
-  <link rel="stylesheet" href="../css/skillset.css">
+  <link rel="stylesheet" href="../css/skillset.css?v=2">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+  <div style="padding-left: 1rem; margin-top: 1rem;">
+  <a href="report.php" class="btn-back">Back to Reports</a>
+</div>
   <div class="header">
     <img src="../images/coles_logo.png" class="logo" alt="KSU Logo">
     <h1>Alumni Skillset Report</h1>

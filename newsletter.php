@@ -23,6 +23,10 @@ include 'config.php';
     <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
 </head>
 <body>
+    <div style="padding-left: 1rem; margin-top: 1rem;">
+  <a href="dashboard.php" class="btn-back">Back to Dashboard</a>
+</div>
+
 <div class="container mt-4">
 
     <!-- Header and Logos -->

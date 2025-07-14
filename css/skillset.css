@@ -152,3 +152,22 @@ body {
   background-color: #f8f8f8;
   font-weight: bold;
 }
+.btn-back,
+.btn-back:visited {
+  background-color: #FDBB30;
+  color: #000;
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-back:hover,
+.btn-back:focus,
+.btn-back:active {
+  background-color: #e6a800;
+  color: #000;
+}

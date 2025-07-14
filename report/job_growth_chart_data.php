@@ -1,42 +1,55 @@
 <?php
-include "../config.php";
+require_once '../config.php'; // Make sure this path points to your DB config
+header('Content-Type: application/json');
 
-$type = $_GET['type'] ?? 'month';
-$data = [];
+// Get the chart type from the URL (alumni, company, or state)
+$type = $_GET['type'] ?? 'alumni';
 
 switch ($type) {
-  case 'month':
-    $sql = "SELECT DATE_FORMAT(date, '%Y-%m') AS label, SUM(amount) AS total FROM donations GROUP BY label ORDER BY label";
-    break;
+    case 'company':
+        // Count jobs by company
+        $sql = "SELECT company AS name, COUNT(*) AS count 
+                FROM employment 
+                GROUP BY company 
+                ORDER BY count DESC 
+                LIMIT 10";
+        break;
 
-  case 'type':
-    $sql = "SELECT type AS label, SUM(amount) AS total FROM donations GROUP BY type ORDER BY total DESC";
-    break;
+    case 'state':
+        // Count jobs by state
+        $sql = "SELECT state AS name, COUNT(*) AS count 
+                FROM employment 
+                GROUP BY state 
+                ORDER BY count DESC 
+                LIMIT 10";
+        break;
 
-  case 'amount':
-    $sql = "SELECT CONCAT(a.fName, ' ', a.lName) AS label, SUM(d.amount) AS total 
-            FROM donations d 
-            JOIN alumni a ON d.alumniID = a.alumniID 
-            GROUP BY d.alumniID 
-            ORDER BY total DESC 
-            LIMIT 10";
-    break;
-
-  default:
-    echo json_encode([]);
-    exit;
+    case 'alumni':
+    default:
+        // Count jobs per alumni (full name)
+        $sql = "SELECT CONCAT(a.fName, ' ', a.lName) AS name, COUNT(e.EID) AS count 
+                FROM alumni a
+                JOIN employment e ON a.alumniID = e.alumniID 
+                GROUP BY a.alumniID 
+                ORDER BY count DESC 
+                LIMIT 10";
+        break;
 }
 
+// Execute query
 $result = $conn->query($sql);
 
+// Format output
+$data = [];
 while ($row = $result->fetch_assoc()) {
-  $data[] = [
-    "label" => $row['label'],
-    "total" => (float)$row['total']
-  ];
+    $data[] = [
+        'name' => $row['name'],
+        'count' => (int)$row['count']
+    ];
 }
 
-header('Content-Type: application/json');
+// Output JSON
 echo json_encode($data);
 ?>
+
 

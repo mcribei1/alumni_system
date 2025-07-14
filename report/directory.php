@@ -55,13 +55,17 @@ $results = mysqli_query($conn, $query);
 <head>
   <meta charset="UTF-8">
   <title>Alumni Directory</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/directory.css">
+  <link rel="stylesheet" href="../css/style.css?v=2">
+  <link rel="stylesheet" href="../css/directory.css?v=2">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 <div class="container mt-4">
+  <div style="padding-left: 1rem; margin-top: 1rem;">
+  <a href="report.php" class="btn-back"> Back to Reports</a>
+</div>
+
     <div class="text-center mb-3">
   <img src="../images/coles_logo.png" alt="KSU Logo" style="height: 80px;">
 </div>
