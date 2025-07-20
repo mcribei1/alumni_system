@@ -1,0 +1,65 @@
+body {
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h2 {
+  color: #1e4d2b;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #fff9db;
+  cursor: pointer;
+}
+
+.modal-content {
+  background-color: #FFD100;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.modal-title {
+  color: #808080;
+}
+
+.btn-primary {
+  background-color: #FFD100;
+  border: none;
+  color: black;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #e6b800;
+  color: black;
+}
+.btn.ksu-yellow {
+  background-color: #FFD100;
+  color: black;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 0.6rem 1.5rem;
+}
+.btn.ksu-yellow:hover {
+  background-color: #e6b800;
+}
+
+.btn-back,
+.btn-back:visited {
+  display: inline-block;
+  background-color: #FDBB30;
+  color: #000;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-back:hover,
+.btn-back:active,
+.btn-back:focus {
+  background-color: #e6a800;
+  color: #000;
+}
