@@ -46,7 +46,7 @@ Visit http://localhost/alumni_system in your browser.
 
  GitHub Repository
 
-You can find the full codebase here:🔗 GitHub Repo Link
+You can find the full codebase here:https://github.com/mcribei1/alumni_system.git
 
 Contributors
 
