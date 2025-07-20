@@ -1,6 +1,20 @@
 Alumni System – Front-End Group 1 Project
+---
 
-This is a web-based Alumni Management System developed as part of a front-end course project. It provides basic functionality for alumni registration, login, communication, and content management.
+ Executive Summary
+
+This Alumni Management System was developed to help faculty and staff at KSU's Coles College of Business securely access, communicate with, and analyze alumni data. It includes a user-friendly dashboard, newsletter capabilities, and dynamic reporting tools to foster long-term alumni engagement and support departmental goals.
+
+--- Core Features
+
+- Secure Login/Logout** with PHP session management
+- Dashboard** with real-time alumni statistics
+- Newsletter Module** with recipient tracking and validation
+- Reports Dashboard** with 4 dynamic, interactive modules:
+  - 🧑‍🎓 **Alumni Directory
+  - 📈 **Job Growth Report
+  - 💡 **Skillset Report
+  - 💰 **Donation Report
 
  Project Structure
 
@@ -29,6 +43,27 @@ User registration and login system
 Dashboard for managing alumni information
 
 Newsletter creation and sending
+🧾 Report Pages (Fully Implemented)
+
+*Alumni Directory**
+- Searchable and filterable list of alumni
+- Contact modals show phone, email, and address
+- Sorting by graduation year, major, and employment
+
+Job Growth Report
+- Accordion interface showing employment histories
+- Tracks job titles, companies, and transitions
+- Visual representation of professional growth
+
+Skillset Report
+- Interactive charts (Chart.js) for technical skills
+- Filters by keyword, state, and job title
+- Supports modal bar chart views of skill frequencies
+  
+Donation Report
+- Charts by donation year, amount, and type
+- Table view with donor info, date, and reason
+- Supports fundraising analysis and tracking
 
 Organized code and modular structure
 
